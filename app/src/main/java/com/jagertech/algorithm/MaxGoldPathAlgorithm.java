@@ -1,10 +1,6 @@
 package com.jagertech.algorithm;
 
 public class MaxGoldPathAlgorithm {
-    public MaxGoldPathAlgorithm() {
-
-    }
-
     static int maxGold = 0;
     static int[] roww = {1, -1, 0, 0};
     static int[] coll = {0, 0, -1, 1};
@@ -39,7 +35,7 @@ public class MaxGoldPathAlgorithm {
         }
     }
 
-    static public int getMaximumGold(int[][] grid) {
+    static public int start(int[][] grid) {
         int count = checkIfAllZeros(grid);
         System.out.println(count);
         if (count != 0) return count;
